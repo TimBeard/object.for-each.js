@@ -1,7 +1,7 @@
 # object.for-each.js
 A polyfill that allows the use of forEach method on objects the same way it's done with arrays.
 
-#Usage
+# Usage
 `Object.prototype.forEach(cb)` where "cb" is a callback function that takes 3 arguments being the current value, the current key and the current object
 
 # Example
