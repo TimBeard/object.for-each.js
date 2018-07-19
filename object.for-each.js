@@ -12,8 +12,10 @@
         });
     };
 
-    if (Object.prototype.forEach === undefined) {
+    if (proto.forEach === undefined) {
 
-        Object.defineProperty(proto, "forEach", {value: forEach});
+        Object.defineProperty(proto, "forEach", {
+            value: forEach
+        });
     }
 }(Object.prototype));
