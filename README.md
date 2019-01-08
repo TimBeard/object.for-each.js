@@ -8,10 +8,7 @@ A polyfill that allows the use of forEach method on objects the same way it's do
 ```javascript
 var foobarbaz = {kfoo: "vfoo", kbar: "vbar", kbaz: "vbaz"};
 
-foobarbaz.forEach(function (val, key, obj) {
-
-    console.log("Object's %s is %s in %s", key, val, JSON.stringify(obj));
-}
+foobarbaz.forEach((val, key, obj) => console.log(`Object's ${key} is ${val} in ${JSON.stringify(obj)}`));
 ```
 
 Will output:
